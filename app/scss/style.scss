@@ -1,0 +1,32 @@
+@import "_global";
+@import "_variables.scss";
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  font-size: 500%;
+  text-align: center;
+}
+
+.aniImage {
+  width: 50%;
+  height: 200px;
+}
+nav {
+  display: grid;
+}
+
+table {
+  width: 100%;
+  padding-bottom: 2rem;
+  tr {
+    padding: 15px;
+    text-align: center;
+  }
+  td {
+    padding: 15px;
+  }
+}
