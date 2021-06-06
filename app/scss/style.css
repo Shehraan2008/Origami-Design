@@ -13,44 +13,75 @@ html {
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #f0f8fe;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: whitesmoke;
   line-height: 1.3;
   margin: 0px;
   padding: 0px;
 }
 
-canvas {
-  display: block;
-  margin: auto;
-}
-
-h1 {
-  font-size: 500%;
-  text-align: center;
-}
-
 .aniImage {
-  width: 50%;
+  width: 100%;
   height: 200px;
 }
 
-nav {
-  display: -ms-grid;
-  display: grid;
+p {
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
-table {
-  width: 100%;
-  padding-bottom: 2rem;
-}
-
-table tr {
-  padding: 15px;
+header {
+  background-color: black;
+  padding: 5%;
   text-align: center;
+  color: white;
 }
 
-table td {
-  padding: 15px;
+header h1 {
+  font-size: 300%;
+  margin: 7%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  font-size: larger;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+main p {
+  text-align: center;
+  margin: 5%;
+}
+
+main .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10%;
+}
+
+main .flex-item {
+  padding: 5px;
+  width: 20%;
+  height: 150px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,32 +1,56 @@
 @import "_global";
 @import "_variables.scss";
 
-canvas {
-  display: block;
-  margin: auto;
-}
-
-h1 {
-  font-size: 500%;
-  text-align: center;
-}
-
 .aniImage {
-  width: 50%;
+  width: 100%;
   height: 200px;
 }
-nav {
-  display: grid;
+
+p {
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
-table {
-  width: 100%;
-  padding-bottom: 2rem;
-  tr {
-    padding: 15px;
-    text-align: center;
+header {
+  background-color: black;
+  padding: 5%;
+  text-align: center;
+  color: white;
+
+  h1 {
+    font-size: 300%;
+    margin: 7%;
   }
-  td {
-    padding: 15px;
+
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    font-size: larger;
+  }
+}
+
+.logo {
+  font-weight: bold;
+}
+
+main {
+  p {
+    text-align: center;
+    margin: 5%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 10%;
+  }
+  .flex-item {
+    padding: 5px;
+    width: 20%;
+    height: 150px;
+    margin-top: 10px;
   }
 }
