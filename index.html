@@ -17,9 +17,9 @@
   </head>
   <body>
     <!-- The Header -->
-    <header>
-      <nav>
-        <li class="logo"><a href="#"></a>🍥 Origami Design</li>
+    <header class="pageHeader">
+      <nav class="navbar">
+        <li><a href="#"></a><strong>🍥 Origami Design</strong></li>
         <li><a href="#"></a>SNS 1</li>
         <li><a href="#"></a>SNS 2</li>
         <li><a href="#"></a>SNS 3</li>
@@ -43,92 +43,220 @@
     </header>
 
     <!-- Main Content  -->
-    <main>
-      <p>
+    <main class="content">
+      <p class="info">
         Everyone Can Learn Origami is a book specifically for beginners who want
         to learn how to make origami.
       </p>
 
-      <p>
+      <p class="info">
         In this book you’ll learn all the major folds and techniques and then
         practice them by folding 77 different traditional models. As you fold
         your way through the models in this book your skills will improve and
         you’ll be able to fold more and more complex designs.
       </p>
 
-      <p class="logo">
-        We’ve posted diagrams for 4 of the models in the book on our site below
-        for you to check out:
+      <p>
+        <strong>
+          We’ve posted diagrams for 6 of the models in the book on our site
+          below for you to check out:
+        </strong>
       </p>
+
       <section class="flex-container">
         <!-- Origami 1 -->
         <article class="flex-item">
-          <a href="https://origami.me/chameleon/"
-            ><img src="./app/assets/camel.png" alt="camelian" class="aniImage"
-          /></a>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
-              gravida dictum, ante lacus ultricies ex, nec fringilla eros lorem
-              a sapien.
-            </li>
-            <li>Proin id hendrerit nisl.</li>
-          </ul>
+          <header class="flex-header">
+            <p>June 6th 2021</p>
+            <h2>Camel</h2>
+          </header>
+
+          <div class="card-content">
+            <img class="aniImage" src="./app/assets/camel.png" alt="" />
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>
+                Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
+                gravida dictum, ante lacus ultricies ex, nec fringilla eros
+                lorem a sapien.
+              </li>
+              <li>Proin id hendrerit nisl.</li>
+            </ul>
+          </div>
+          <div class="flex-author">
+            <a class="author-avatar" href="#"
+              ><img src="./app/assets/avatar.png" alt="avatar"
+            /></a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Gojo Satoru
+            </div>
+          </div>
         </article>
 
         <!-- Origami 2 -->
         <article class="flex-item">
-          <a href="https://origami.me/chameleon/"
-            ><img
-              src="./app/assets/chameleon.png"
-              alt="camelian"
-              class="aniImage"
-          /></a>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
-              gravida dictum, ante lacus ultricies ex, nec fringilla eros lorem
-              a sapien.
-            </li>
-            <li>Proin id hendrerit nisl.</li>
-          </ul>
+          <header class="flex-header">
+            <p>June 6th 2021</p>
+            <h2>Chameleon</h2>
+          </header>
+
+          <div class="card-content">
+            <img class="aniImage" src="./app/assets/chameleon.png" alt="" />
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>
+                Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
+                gravida dictum, ante lacus ultricies ex, nec fringilla eros
+                lorem a sapien.
+              </li>
+              <li>Proin id hendrerit nisl.</li>
+            </ul>
+          </div>
+
+          <div class="flex-author">
+            <a class="author-avatar" href="#"
+              ><img src="./app/assets/avatar.png" alt="avatar"
+            /></a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Gojo Satoru
+            </div>
+          </div>
         </article>
 
         <!-- Origami 3  -->
         <article class="flex-item">
-          <a href="https://origami.me/chameleon/"
-            ><img src="./app/assets/teddy.png" alt="camelian" class="aniImage"
-          /></a>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
-              gravida dictum, ante lacus ultricies ex, nec fringilla eros lorem
-              a sapien.
-            </li>
-            <li>Proin id hendrerit nisl.</li>
-          </ul>
+          <header class="flex-header">
+            <p>June 6th 2021</p>
+            <h2>Teddy</h2>
+          </header>
+          <div class="card-content">
+            <img class="aniImage" src="./app/assets/teddy.png" alt="" />
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>
+                Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
+                gravida dictum, ante lacus ultricies ex, nec fringilla eros
+                lorem a sapien.
+              </li>
+              <li>Proin id hendrerit nisl.</li>
+            </ul>
+          </div>
+          <div class="flex-author">
+            <a class="author-avatar" href="#"
+              ><img src="./app/assets/avatar.png" alt="avatar"
+            /></a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Gojo Satoru
+            </div>
+          </div>
         </article>
 
         <!-- Origami 4  -->
         <article class="flex-item">
-          <a href="https://origami.me/chameleon/"
-            ><img
-              src="./app/assets/rsz_cursor.png"
-              alt="camelian"
-              class="aniImage"
-          /></a>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>
-              Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
-              gravida dictum, ante lacus ultricies ex, nec fringilla eros lorem
-              a sapien.
-            </li>
-            <li>Proin id hendrerit nisl.</li>
-          </ul>
+          <header class="flex-header">
+            <p>June 6th 2021</p>
+            <h2>Cicada</h2>
+          </header>
+          <div class="card-content">
+            <img class="aniImage" src="./app/assets/cicada.png" alt="" />
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>
+                Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
+                gravida dictum, ante lacus ultricies ex, nec fringilla eros
+                lorem a sapien.
+              </li>
+              <li>Proin id hendrerit nisl.</li>
+            </ul>
+          </div>
+          <div class="flex-author">
+            <a class="author-avatar" href="#"
+              ><img src="./app/assets/avatar.png" alt="avatar"
+            /></a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Gojo Satoru
+            </div>
+          </div>
+        </article>
+
+        <!-- Origami 5  -->
+        <article class="flex-item">
+          <header class="flex-header">
+            <p>June 6th 2021</p>
+            <h2>Panda</h2>
+          </header>
+          <div class="card-content">
+            <img class="aniImage" src="./app/assets/panda.png" alt="" />
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>
+                Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
+                gravida dictum, ante lacus ultricies ex, nec fringilla eros
+                lorem a sapien.
+              </li>
+              <li>Proin id hendrerit nisl.</li>
+            </ul>
+          </div>
+          <div class="flex-author">
+            <a class="author-avatar" href="#"
+              ><img src="./app/assets/avatar.png" alt="avatar"
+            /></a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Gojo Satoru
+            </div>
+          </div>
+        </article>
+
+        <!-- Origami 6  -->
+        <article class="flex-item">
+          <header class="flex-header">
+            <p>June 6th 2021</p>
+            <h2>Pigeon</h2>
+          </header>
+          <div class="card-content">
+            <img class="aniImage" src="./app/assets/pigeon.png" alt="" />
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>
+                Nam finibus eleifend nulla ac commodo. Vivamus fringilla, ex at
+                gravida dictum, ante lacus ultricies ex, nec fringilla eros
+                lorem a sapien.
+              </li>
+              <li>Proin id hendrerit nisl.</li>
+            </ul>
+          </div>
+          <div class="flex-author">
+            <a class="author-avatar" href="#"
+              ><img src="./app/assets/avatar.png" alt="avatar"
+            /></a>
+            <svg class="half-circle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+            <div class="author-name">
+              <div class="author-name-prefix">Author</div>
+              Gojo Satoru
+            </div>
+          </div>
         </article>
       </section>
     </main>

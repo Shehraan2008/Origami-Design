@@ -1,28 +1,19 @@
 @import "_global";
 @import "_variables.scss";
 
-.aniImage {
-  width: 100%;
-  height: 200px;
-}
-
-p {
-  font-size: 1.5rem;
-  font-weight: 200;
-}
-
-header {
-  background-color: black;
-  padding: 5%;
+// The Header
+.pageHeader {
+  background-image: url("../assets/wood.jpeg");
   text-align: center;
   color: white;
+  padding: 5%;
 
   h1 {
     font-size: 300%;
     margin: 7%;
   }
 
-  nav {
+  .navbar {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -31,26 +22,103 @@ header {
   }
 }
 
-.logo {
-  font-weight: bold;
-}
-
+// Main Content of the Page
 main {
   p {
     text-align: center;
     margin: 5%;
   }
 
+  // The Cards
   .flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin: 10%;
   }
+
+  // A card
   .flex-item {
-    padding: 5px;
-    width: 20%;
-    height: 150px;
+    background-color: white;
     margin-top: 10px;
+    padding: 5px;
+    height: 70%;
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  // The Card Headers
+  .flex-header {
+    p {
+      font-size: 14px;
+      margin: 0 0 1rem;
+      color: #7a7a8c;
+      text-align: left;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 0.25rem 0 auto;
+      text-decoration: none;
+      color: inherit;
+      border: 0;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  // If we hover over the item
+  .flex-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+  }
+
+  // The Images
+  .aniImage {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+  // The Author
+  .flex-author {
+    margin: 3rem 0 0;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    position: relative;
+  }
+
+  // Article Author
+  .author-avatar {
+    grid-area: auto;
+    align-self: start;
+    position: relative;
+    box-sizing: border-box;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      filter: grayscale(100%);
+      display: block;
+      overflow: hidden;
+      margin: 16px 10px;
+    }
+  }
+
+  .half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 48px;
+    fill: none;
+    stroke: #ff8a00;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
   }
 }
